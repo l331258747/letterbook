@@ -1,0 +1,5 @@
+rootProject.name='letterbook'
+include ':app'
+include ':core'
+include ':viewlib'
+//, ':ucrop', ':picture_library'

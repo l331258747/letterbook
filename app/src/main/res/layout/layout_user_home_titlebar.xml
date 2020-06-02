@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_bar"
+    android:layout_width="match_parent"
+    app:layout_collapseMode="pin"
+    android:layout_height="48dp">
+
+
+    <ImageButton
+        android:id="@+id/ib_bnt"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_back_black"
+        android:background="@android:color/transparent"
+        android:scaleType="center"
+        android:tint="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:text="dasdasd"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:singleLine="true"
+        android:visibility="visible" />
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_share_store"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_store_chat_msg"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_store_share"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_store_chat_msg"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_store_chat"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

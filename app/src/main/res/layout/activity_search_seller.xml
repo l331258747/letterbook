@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_search_seller"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/iv_search_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_black"
+            android:scaleType="center"
+            android:tint="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_toRightOf="@+id/iv_search_back"
+            android:background="@drawable/bg_et_search_radius"
+            android:textCursorDrawable="@drawable/bg_cursor_color"
+            android:hint="搜索 美食、服装、数码"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_search_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_history"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_seller_history_search"
+                    android:layout_toRightOf="@+id/iv_search_history"
+                    android:textColor="@color/black_333333"
+                    android:layout_marginTop="20dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginStart="6dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_search_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_search_delete"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"/>
+
+
+                <com.csxs.viewlib.LabelsView
+                    android:id="@+id/lv_search_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/iv_search_history"
+                    app:labelBackground="@drawable/bg_item_tag_normal"
+                    app:labelTextColor="@color/black_333333"
+                    app:labelTextHeight="wrap_content"
+                    app:labelTextPaddingBottom="5dp"
+                    app:labelTextPaddingLeft="10dp"
+                    app:labelTextPaddingRight="10dp"
+                    app:labelTextPaddingTop="5dp"
+                    app:labelTextSize="12sp"
+                    app:labelTextWidth="wrap_content"
+                    app:lineMargin="10dp"
+                    app:maxSelect="0"
+                    app:minSelect="1"
+                    app:selectType="SINGLE"
+                    app:wordMargin="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_search_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_hot"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_seller_hot_search"
+                    android:layout_toRightOf="@+id/iv_search_hot"
+                    android:textColor="@color/black_333333"
+                    android:layout_marginTop="20dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginStart="6dp"/>
+
+                <com.csxs.viewlib.LabelsView
+                    android:id="@+id/lv_search_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/iv_search_hot"
+                    app:labelBackground="@drawable/bg_item_tag_normal"
+                    app:labelTextColor="@color/black_333333"
+                    app:labelTextHeight="wrap_content"
+                    app:labelTextPaddingBottom="5dp"
+                    app:labelTextPaddingLeft="10dp"
+                    app:labelTextPaddingRight="10dp"
+                    app:labelTextPaddingTop="5dp"
+                    app:labelTextSize="12sp"
+                    app:labelTextWidth="wrap_content"
+                    app:lineMargin="10dp"
+                    app:maxSelect="0"
+                    app:minSelect="1"
+                    app:selectType="SINGLE"
+                    app:wordMargin="10dp" />
+                
+                
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rc_hot_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/lv_search_hot"
+                    android:layout_marginTop="10dp"
+                    android:overScrollMode="never"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:overScrollMode="never"/>
+    </FrameLayout>
+
+
+</LinearLayout>

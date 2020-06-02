@@ -1,0 +1,127 @@
+apply plugin: 'com.android.library'
+def dependence = rootProject.ext
+android {
+    compileSdkVersion dependence.android.compileSdkVersion
+    buildToolsVersion dependence.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion dependence.android.minSdkVersion
+        targetSdkVersion dependence.android.compileSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "HTTP_BASE", "\"${rootProject.ext.apiUrl.releaseUrl}\"")
+            buildConfigField("String", "WX_APPID", "\"${rootProject.ext.appKey.wxAppId}\"")
+            buildConfigField("String", "WX_APPSECRET", "\"${rootProject.ext.appKey.wxAppSecret}\"")
+        }
+
+        debug {
+            minifyEnabled false
+            buildConfigField("String", "HTTP_BASE", "\"${rootProject.ext.apiUrl.debugUrl}\"")
+            buildConfigField("String", "WX_APPID", "\"${rootProject.ext.appKey.wxAppId}\"")
+            buildConfigField("String", "WX_APPSECRET", "\"${rootProject.ext.appKey.wxAppSecret}\"")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.appSourceCompatibility
+        targetCompatibility rootProject.ext.appTargetCompatibility
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.2.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //UI控件
+    api dependence.app.constraintlayout
+    api dependence.app.material
+    api dependence.app.coordinatorlayout
+    api dependence.app.magicIndicator
+    api dependence.app.smartRefreshLayout
+    api dependence.app.badgeview
+
+    //rxjava
+    api dependence.app.rxjava
+    api dependence.app.rxandroid
+
+    //Retrofit
+    api dependence.app.retrofit
+    api dependence.app.converterGson
+    api dependence.app.converterScalars
+    api dependence.app.adapterRxjava
+
+    //Okhttp
+    api dependence.app.okhttp
+    api dependence.app.okhttpCompiler
+
+    //Glide
+    api dependence.app.glide
+    annotationProcessor dependence.app.glideCompiler
+    api dependence.app.glideintegration
+
+    //Dagger2
+    implementation dependence.app.dagger
+    annotationProcessor dependence.app.daggerCompiler
+    implementation dependence.app.daggerAndroid
+    implementation dependence.app.daggerSupport
+    annotationProcessor dependence.app.daggerAndroidProcessor
+
+    //RecyclerView 三方Adapter
+    api dependence.app.baseRecyclerViewAdapterHelper
+
+    //内存泄漏监测Leakcanary
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+//    debugImplementation dependence.app.leakcanary
+//    releaseImplementation dependence.app.leakcanaryCompiler
+
+    //RxJava 取消订阅 三方库
+    api dependence.app.autodispose
+    api dependence.app.autodisposeLifecycle
+    api dependence.app.autodisposeAndroid
+    api dependence.app.autodisposeRxlifecycle
+    api dependence.app.autodisposeandroidarch
+
+    //沉侵式状态栏
+    api dependence.app.immersionbar
+    api dependence.app.immersionbarComponents
+
+    //buterKnife
+    implementation dependence.app.buterKnife
+    annotationProcessor dependence.app.butterKnifeCompiler
+
+    //eventbus 事件总线
+    api dependence.app.eventbus
+
+    //屏幕适配Android AutoSize
+    api dependence.app.autosize
+
+    //本地存储库
+    api dependence.app.mmkv
+
+    //权限库
+    api dependence.app.permission
+
+    //三方UI库
+    api project(path: ':viewlib')
+   // api project(':picture_library')
+
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.6'
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.4.0'
+
+    api 'com.contrarywind:Android-PickerView:4.1.9';
+}

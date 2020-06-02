@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/root_layout_function"
+    android:layout_width="wrap_content"
+    android:layout_height="240dp">
+
+    <LinearLayout
+        android:id="@+id/ll_app_funcation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_left_social_radius">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_app_task" />
+
+        <ImageView
+            android:id="@+id/iv_user_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_app_vip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_user_guide" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_app_activitis" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ll_app_funcation"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_left_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_social"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

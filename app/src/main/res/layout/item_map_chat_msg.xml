@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_user_chat_msg"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="asdad"-->
+<!--        android:textSize="11sp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:padding="2dp"-->
+<!--        android:includeFontPadding="false"/>-->
+
+    <com.csxs.viewlib.CircleImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_header"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="某某是用了什么卡片吗"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:textSize="11sp"/>
+
+</LinearLayout>

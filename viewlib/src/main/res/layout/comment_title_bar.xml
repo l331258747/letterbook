@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.csxs.viewlib.titlebar.CommonTitleBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    titlebar:centerText="标题栏"
+    titlebar:centerTextSize="18sp"
+    titlebar:centerTextColor="#36363A"
+    titlebar:centerType="textView"
+    titlebar:leftDrawablePadding="12dp"
+    titlebar:leftType="imageButton"
+    titlebar:showBottomLine="true"
+    titlebar:leftDrawable="@drawable/ic_back_black"
+    titlebar:rightTextSize="14sp"
+    titlebar:rightType="textView"
+    titlebar:rightTextColor="#36363A"
+    />
+
+<!--    titlebar:titleBarColor="@color/white"-->

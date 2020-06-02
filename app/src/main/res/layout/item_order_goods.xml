@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/sv_goods_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="苹果X"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="1dp"
+        android:layout_alignTop="@+id/sv_goods_img"
+        android:layout_toEndOf="@+id/sv_goods_img"
+        />
+
+    <TextView
+        android:id="@+id/tv_type_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="0.1mg 小红瓶 定制版"
+        android:textColor="#aaaaaa"
+        android:textSize="10sp"
+        android:includeFontPadding="false"
+        android:layout_toEndOf="@+id/sv_goods_img"
+        android:layout_below="@+id/tv_goods_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/rmb_single"
+        android:textColor="@color/color_red_EC1919"
+        android:layout_toEndOf="@+id/sv_goods_img"
+        android:textSize="14sp"
+        android:layout_below="@+id/tv_type_sf"
+        />
+
+    <TextView
+        android:id="@+id/tv_goods_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="x0"
+        android:textColor="#676767"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_goods_price"
+        android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>

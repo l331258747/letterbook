@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_strat_chat"
+        app:srlEnableFooterFollowWhenNoMoreData="true"
+        app:srlEnableOverScrollDrag="false">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:elevation="0dp">
+                <!--            <com.google.android.material.appbar.AppBarLayout-->
+                <!--                android:id="@+id/appbar_layout"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:background="@android:color/transparent"-->
+                <!--                app:elevation="0dp"-->
+                <!--                app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <include layout="@layout/layout_seller_home_topinfo" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        app:elevation="0dp"
+                        app:layout_collapseMode="pin" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <net.lucode.hackware.magicindicator.MagicIndicator
+                        android:id="@+id/tab_magicIndicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            <include
+                android:id="@+id/blackview"
+                layout="@layout/view_black" />
+
+            <include
+                android:id="@+id/car_container"
+                layout="@layout/pop_bottom_car" />
+
+            <include
+                android:id="@+id/car_mainfl"
+                layout="@layout/layout_bottom_car" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent" />
+
+        <include layout="@layout/layout_user_home_titlebar" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_strat_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <com.csxs.viewlib.DrawableCenterTextView
+            android:id="@+id/tv_comment_shop"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_radius_yellow"
+            android:drawableLeft="@drawable/ic_comment"
+            android:gravity="center_vertical"
+            android:text="写点评"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            />
+
+        <com.csxs.viewlib.DrawableCenterTextView
+            android:id="@+id/tv_strat_chat"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_radius_black"
+            android:drawableLeft="@drawable/ic_start_chat"
+            android:gravity="center_vertical"
+            android:text="发起聊天"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

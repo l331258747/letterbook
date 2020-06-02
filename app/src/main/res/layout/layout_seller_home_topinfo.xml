@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner_seller_top"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:indicator_normal_color="@android:color/white"
+            app:indicator_selected_color="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/banner_num_indicator"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="0/0"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_banner_indicator_radius"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@+id/banner_seller_top"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"/>
+
+
+        <com.csxs.viewlib.CircleImageView
+            android:id="@+id/ci_img_seller"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_default_circle_store_header"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"/>
+
+        <com.csxs.viewlib.DrawableCenterTextView
+            android:id="@+id/tv_attention_seller"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:text="关注"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:drawablePadding="4dp"
+            android:layout_marginEnd="15dp"
+            android:drawableLeft="@drawable/ic_seller_attention"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_tv_attention_seller"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_seller_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大斌家串串火锅"
+        android:textColor="@color/black_333333"
+        android:textSize="16sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_top_banner"/>
+
+    <ImageView
+        android:id="@+id/iv_seller_type_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_seller_store"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_seller_store_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_seller_store_name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_seller_store_name"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_seller_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black_999999"-->
+<!--        android:textSize="14sp"-->
+<!--        android:text="ID:123456"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_seller_store_name"/>-->
+
+    <TextView
+        android:id="@+id/tv_seller_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="14dp"
+        android:text="简介：文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述"
+        android:lineSpacingMultiplier="1"
+        android:lineSpacingExtra="2dp"
+        android:textSize="14sp"
+        android:textColor="@color/black_333333"
+        app:layout_constraintTop_toBottomOf="@+id/iv_seller_type_tag"
+        />
+
+    <TextView
+        android:id="@+id/tv_store_visitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seller_desc"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_store_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@+id/tv_store_visitor"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@+id/tv_store_visitor" />
+
+
+
+    <TextView
+        android:id="@+id/tv_store_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美食"
+        android:textColor="@color/color_red_EC1919"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:background="@drawable/bg_store_tag_radius"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_store_visitor"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_seller_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_store_tag"
+        android:text="距我位置222米"
+        android:textSize="12sp"
+        android:textColor="@color/black_666666"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toRightOf="@+id/tv_store_tag"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_store_tag"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_store_tag"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

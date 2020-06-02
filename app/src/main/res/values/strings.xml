@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">letterbook</string>
+
+    <string name="perfect_text_tip">填写个人资料不错过缘分~</string>
+
+    <string name="perfect_input_niackname">输入昵称~</string>
+
+    <string name="tab_str_dynamic">动态</string>
+
+    <string name="tab_str_seller">商家</string>
+
+    <string name="tab_str_social">社交</string>
+
+    <string name="tab_str_message">消息</string>
+
+    <string name="tab_str_mine">我的</string>
+
+    <string name="str_seller_history_search">历史搜索</string>
+
+    <string name="str_seller_hot_search">热门搜索</string>
+
+    <string name="pp_format_remain_image">+%1$d</string>
+
+    <string name="search_option_industry_str">行业</string>
+
+    <string name="search_option_distance_str">距离</string>
+
+    <string name="search_option_activites_str">优惠活动</string>
+
+    <array name="search_option_distance_tick_below_text_length_6">
+        <item>0km</item>
+        <item>1km</item>
+        <item>2km</item>
+        <item>3km</item>
+        <item>4km</item>
+        <item>5km</item>
+    </array>
+
+
+    <array name="str_user_gender">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+
+
+    <string name="edit_done">完成</string>
+
+    <string name="edit">编辑</string>
+
+    <string name="delete_goods">删除(%1$d)</string>
+
+    <string name="rmb_total">¥&#160;%1$.2f</string>
+
+    <string name="rmb_order_total">合计：¥&#160;%1$.2f</string>
+
+    <string name="rmb_all_count">共(%1$d)件商品</string>
+
+    <string name="go_settle_cart">结算(%1$d)</string>
+
+
+    <string name="rmb_single">¥&#160;%1$.2f</string>
+
+    <string name="goods_num_placeholder">x%d</string>
+
+
+    <string name="distance_placeholder">距离我的位置%s</string>
+
+    <string name="str_placeholder">%s</string>
+
+    <string name="int_placeholder">%d</string>
+
+    <string name="str_distance_placeholder">距离我的位置%.2f米</string>
+
+    <string name="str_seller_id_placeholder">ID:%d</string>
+
+    <string name="str_brief_placeholder">简介:%s</string>
+
+    <string name="str_yingye_placeholder">营业中·%s - %s</string>
+
+    <string name="str_banner_num_placeholder">%d/%d</string>
+
+    <string name="str_dynamic_time_placeholder">%s · %s · 发表了动态</string>
+
+    <string name="str_dynamic_details_time_placeholder">%s · 发表了动态</string>
+
+    <string name="str_dynamic_wanring_placeholder">尊敬的用户，您发布的内容须遵守相关法律法规和社区规则，请严格遵守相关规定，以免违规。</string>
+
+    <string name="str_emotion">情感状态：%1$s</string>
+
+    <string name="str_city">城市：%1$s</string>
+
+    <string name="eleme_json">
+        "[{\"header\":\"优惠\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"优惠\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}},{\"header\":\"套餐\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}},{\"header\":\"主食\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"主食\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}},{\"header\":\"饮料\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"饮料\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}},{\"header\":\"套餐A\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐A\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}},{\"header\":\"套餐B\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐B\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}},{\"header\":\"套餐C\",\"isHeader\":true},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"全家桶\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"可乐\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-4a6889ba228feb46.png\",\"title\":\"小食四拼\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-636381a9f7a855d6.png\",\"title\":\"烤全翅\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"奥尔良鸡腿汉堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-7d50230a36c40a94.png\",\"title\":\"鳕鱼堡\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-2c0645f9b1a588de.png\",\"title\":\"鸡腿\"}},{\"isHeader\":false,\"info\":{\"content\":\"好吃的食物，增肥神器，有求必应\\n月售10008 好评率100%\",\"group\":\"套餐C\",\"imgUrl\":\"https://upload-images.jianshu.io/upload_images/57036-203db4255e78922a.png\",\"title\":\"草莓派\"}}]"
+    </string>
+
+
+    <string name="location_order_str">请选择合适的寄件地址</string>
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+</resources>

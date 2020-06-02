@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_cart_goods"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/goods_checkbox"
+        app:layout_constraintTop_toTopOf="parent"
+
+      />
+
+    <TextView
+        android:id="@+id/tv_cart_goods_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="某课程某某某某课某某课程某某某某课某某课程某某某某课某某课程某某某某课某某课程某某某某课某某课程某某某某课某"
+        tools:text="某某某某课程"
+        android:textColor="@color/black_333333"
+        android:textSize="14sp"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cart_goods"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_cart_goods"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_cart_goods_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        tools:text="规格:正常冰+正常糖"
+        android:text="规格:正常冰+正常糖"
+        android:includeFontPadding="false"
+        android:textColor="@color/black_999999"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cart_goods"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_goods_name"/>
+
+    <TextView
+        android:id="@+id/tv_cart_goods_buy_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外单"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:includeFontPadding="false"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_cart_goods_sf"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cart_goods_sf"
+        app:layout_constraintTop_toTopOf="@+id/tv_cart_goods_sf"
+        android:background="@drawable/bg_cart_goods_buy_way"/>
+
+
+    <TextView
+        android:id="@+id/tv_cart_goods_current_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        tools:text="@string/rmb_single"
+        android:text="123"
+        android:textColor="@color/color_red_EC1919"
+        android:textSize="13sp"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cart_goods"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_goods_sf"
+       />
+
+
+    <TextView
+        android:id="@+id/tv_cart_goods_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        tools:text="@string/rmb_single"
+        android:text="1234"
+        android:textColor="@color/black_999999"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        app:layout_constraintLeft_toRightOf="@+id/tv_cart_goods_current_price"
+        app:layout_goneMarginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cart_goods_current_price"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_goods_current_price"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_reduce"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_seller_store_reduce_goods"
+            />
+
+        <TextView
+            android:id="@+id/tv_cart_goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            tools:text="11"
+            android:text="11"
+            android:textColor="@color/black_101010"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:src="@drawable/ic_seller_store_add_goods"
+            />
+    </LinearLayout>
+
+
+
+    <CheckBox
+        android:id="@+id/goods_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/item_selector_checked"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cart_goods"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@+id/iv_cart_goods"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_invalid_goods"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="失效"-->
+<!--        android:textColor="@color/_999999"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:paddingEnd="10dp"-->
+<!--        android:paddingTop="2dp"-->
+<!--        android:paddingBottom="2dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/goods_checkbox"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/goods_checkbox"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:background="@drawable/bg_cart_goods_invalid"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

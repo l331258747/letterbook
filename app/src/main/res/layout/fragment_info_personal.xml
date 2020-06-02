@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/seller_info_recycler"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--      />-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="个人信息"
+                android:textColor="@color/black_333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_personal_emotion"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="情感状态：单身"
+                android:textColor="@color/black_666666" />
+
+            <TextView
+                android:id="@+id/tv_personal_address"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="地址：湖南长沙开福区"
+                android:textColor="@color/black_666666" />
+
+            <TextView
+                android:id="@+id/tv_personal_signed"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="个性签名：主人很懒什么都没留下"
+                android:textColor="@color/black_666666" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_ececec" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="个性标签"
+                android:textColor="@color/black_333333"
+                android:textSize="14sp" />
+
+            <com.csxs.viewlib.LabelsView
+                android:id="@+id/ll_tag_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                app:labelBackground="@drawable/bg_mine_tag"
+                app:labelTextColor="@drawable/lable_param_text_color"
+                app:labelTextHeight="wrap_content"
+                app:labelTextPaddingBottom="5dp"
+                app:labelTextPaddingLeft="15dp"
+                app:labelTextPaddingRight="15dp"
+                app:labelTextPaddingTop="5dp"
+                app:labelTextSize="12sp"
+                app:labelTextWidth="wrap_content"
+                app:lineMargin="10dp"
+                app:maxSelect="8"
+                app:minSelect="1"
+                app:wordMargin="10dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

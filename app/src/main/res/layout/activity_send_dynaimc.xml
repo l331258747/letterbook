@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/ed_dynamic_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="记录美好时刻，从信书开始..."
+        android:maxHeight="400dp"
+        android:minHeight="100dp"
+        android:paddingStart="15dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="15dp"
+        android:textSize="14sp"
+        android:textCursorDrawable="@drawable/bg_cursor_color"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_dynamic_input_number"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:text="0/500" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_dynamic_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:overScrollMode="never"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_warning_radius">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_warning" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:includeFontPadding="false"
+            android:text="@string/str_dynamic_wanring_placeholder"
+            android:textColor="@color/black_333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

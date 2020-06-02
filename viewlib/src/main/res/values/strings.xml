@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">viewlib</string>
+    <string name="titlebar_search_hint">Search</string>
+
+    <item name="tag_key_data" type="id" />
+    <item name="tag_key_position" type="id" />
+
+    <string name="social_contract">收起</string>
+    <string name="social_expend">展开</string>
+    <string name="social_text_target">网页链接</string>
+</resources>

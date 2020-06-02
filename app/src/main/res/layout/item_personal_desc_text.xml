@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="个人信息"
+        android:textColor="@color/black_333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_personal_emotion"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="情感状态：单身"
+        android:textColor="@color/black_666666" />
+
+    <TextView
+        android:id="@+id/tv_personal_address"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="地址：湖南长沙开福区"
+        android:textColor="@color/black_666666" />
+
+    <LinearLayout
+        android:id="@+id/rl_signed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_mine_more"
+            android:text="个性签名"
+            android:textColor="@color/black_666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_personal_signed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/tv_signed_text"
+            android:ellipsize="end"
+            android:hint="主人很懒什么都没留下"
+            android:lines="3"
+            android:text=""
+            android:textColor="@color/black_333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

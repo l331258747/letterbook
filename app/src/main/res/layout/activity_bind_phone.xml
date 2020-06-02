@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_text_bind_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/ic_text_bind_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bind_account_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_account_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/iv_text_bind_phone">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_phone" />
+
+        <com.csxs.viewlib.ClearEditText
+            android:id="@+id/user_bind_account_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black_333333"
+            android:textCursorDrawable="@drawable/bg_cursor_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bind_sms_cdoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_account_edittext"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ll_bind_account_phone">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_sms_code" />
+
+        <EditText
+            android:id="@+id/et_login_verif_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingStart="10dp"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/black_333333"
+            android:textCursorDrawable="@drawable/bg_cursor_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_send_code"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_code_radius"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="获取验证码"
+            android:textColor="@color/black_cccccc" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_confirm_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_button_login_radius"
+        android:textColor="@color/black_cccccc"
+        android:gravity="center"
+        android:text="确认绑定"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bg_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/ll_bind_sms_cdoe" />
+
+    <ImageView
+        android:id="@+id/iv_bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_bottom_login"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/rb_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_radiobutton"
+            android:text="我已同意"
+            android:paddingLeft="4dp"
+            android:textColor="@color/black_666666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户注册协议》"
+            android:textColor="@color/color_E30212"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="@color/black_666666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户隐私协议》"
+            android:textColor="@color/color_E30212"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

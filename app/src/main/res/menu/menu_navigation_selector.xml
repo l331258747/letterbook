@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_dynamic"
+        android:icon="@drawable/tab_dynamic_selector"
+        android:title="@string/tab_str_dynamic" />
+
+    <item
+        android:id="@+id/tab_seller"
+        android:icon="@drawable/tab_seller_selector"
+        android:title="@string/tab_str_seller" />
+
+    <item
+        android:id="@+id/tab_social"
+        android:icon="@drawable/tab_social_selector"
+        android:title="@string/tab_str_social" />
+
+    <item
+        android:id="@+id/tab_msg"
+        android:icon="@drawable/tab_message_selector"
+        android:title="@string/tab_str_message" />
+
+    <item
+        android:id="@+id/tab_mine"
+        android:icon="@drawable/tab_mine_selector"
+        android:title="@string/tab_str_mine" />
+
+</menu>

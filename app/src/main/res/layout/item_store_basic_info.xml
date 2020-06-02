@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="基本信息"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_333333"
+        android:paddingStart="15dp"
+
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_store_business_time"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="营业·10:00-21:00"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/black_333333"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_business_time"/>
+
+
+    <TextView
+        android:id="@+id/tv_store_address"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="湖南省长沙市开福区北辰三角洲凤凰海购物公园1栋B1E1栋"
+        android:textSize="13sp"
+        android:drawablePadding="10dp"
+        android:paddingStart="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_333333"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_store_address"/>
+
+    <TextView
+        android:id="@+id/tv_store_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="0731-85232214"
+        android:textSize="13sp"
+        android:drawablePadding="10dp"
+        android:paddingStart="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_333333"
+        android:drawableStart="@drawable/ic_store_phone"
+       />
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="10dp"-->
+<!--        android:background="@color/color_f2f2f2"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/tv_business_license"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:text="营业许可资质"
+        android:paddingStart="15dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@drawable/ic_store_more"
+        android:paddingEnd="15dp"
+       />
+
+
+
+
+
+
+
+</LinearLayout>

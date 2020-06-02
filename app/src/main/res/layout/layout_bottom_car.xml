@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.csxs.letterbook.widgets.ShopCarView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/car_mainfl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/shopcar_height"
+    android:layout_gravity="bottom"
+    android:elevation="4dp"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/car_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_order_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_shop_car"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_place_order" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/car_badge"
+            style="@style/badge_style"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/car_nonselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/rl_order_image"
+            android:text="未选购商品"
+            android:textColor="#a8a8a8"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_toRightOf="@+id/rl_order_image"
+            android:text="123"
+            android:textColor="@color/black_333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/amount_container"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginLeft="80dp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:visibility="gone">-->
+
+
+        <!--        </LinearLayout>-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/car_limit"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:background="#535353"-->
+        <!--            android:gravity="center"-->
+        <!--            android:onClick="goAccount"-->
+        <!--            android:paddingLeft="8dp"-->
+        <!--            android:paddingRight="8dp"-->
+        <!--            android:text="我选好了"-->
+        <!--            android:textColor="#a8a8a8"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            />-->
+
+
+        <TextView
+            android:id="@+id/car_limit"
+            android:layout_width="87dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_selector_no_goods_submit"
+            android:gravity="center"
+            android:text="我选好了"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RelativeLayout>
+
+
+</com.csxs.letterbook.widgets.ShopCarView>

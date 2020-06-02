@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="white_alpha">#66ffffff</color>
+
+    <color name="white_alpha_73">#4D000000</color>
+
+    <color name="black_999999">#999999</color>
+    <color name="black_cccccc">#cccccc</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_666666">#666666</color>
+    <color name="black_101010">#101010</color>
+
+    <color name="color_F3F3F8">#F3F3F8</color>
+    <color name="color_ececec">#ececec</color>
+    <color name="color_E30212">#E30212</color>
+    <color name="color_4D4D4D">#4D4D4D</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="color_0D0D0D">#0D0D0D</color>
+
+    <color name="color_f2f2f2">#f2f2f2</color>
+
+    <color name="color_F4210B">#F4210B</color>
+    <color name="color_E7A124">#E7A124</color>
+
+
+    <color name="color_image_maskColor">#CC000000</color>
+
+    <color name="color_image__maskTextColor">#FFFFFF</color>
+
+    <color name="color_8290AF">#8290AF</color>
+
+    <color name="praise_item_default">#45D06C</color>
+
+    <color name="praise_item_text_default">#666666</color>
+
+    <color name="praise_item_selector_default">#cccccc</color>
+
+    <color name="dividerColor">#BDBDBD</color>
+
+    <color name="dodgerblue">#1e90ff</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.csxs.viewlib.LabelsView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lv_goods_param"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/iv_search_history"
+    android:padding="5dp"
+    app:labelBackground="@drawable/bg_label_goods_param"
+    app:labelTextColor="@drawable/lable_param_text_color"
+    app:labelTextHeight="wrap_content"
+    app:labelTextPaddingBottom="5dp"
+    app:labelTextPaddingLeft="15dp"
+    app:labelTextPaddingRight="15dp"
+    app:labelTextPaddingTop="5dp"
+    app:labelTextSize="12sp"
+    app:labelTextWidth="wrap_content"
+    app:lineMargin="10dp"
+    app:maxSelect="0"
+    app:minSelect="1"
+    app:selectType="SINGLE"
+    app:wordMargin="10dp" />

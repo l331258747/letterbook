@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0.5dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.csxs.viewlib.CircleImageView
+        android:id="@+id/civ_seller_home_user_header"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_default_circle_store_header"/>
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/ic_vip"
+        android:layout_alignBottom="@+id/civ_seller_home_user_header"
+        android:layout_alignRight="@+id/civ_seller_home_user_header"/>
+
+    <TextView
+        android:id="@+id/tv_seller_home_user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/civ_seller_home_user_header"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:includeFontPadding="false"
+        android:layout_toRightOf="@+id/civ_seller_home_user_header"
+        android:text="昵称昵称昵称"
+        android:textColor="@color/black_333333"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/tv_seller_home_user_identity"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignTop="@+id/tv_seller_home_user_nickname"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/tv_seller_home_user_nickname"
+        android:src="@drawable/ic_seller_store"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_seller_home_user_sex_tag"
+        android:layout_width="30dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@+id/civ_seller_home_user_header"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/civ_seller_home_user_header"
+        android:background="@drawable/bg_dynamic_sex_age_woman"
+        android:drawableLeft="@drawable/ic_dynamic_sex_woman"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="40"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_seller_home_user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/civ_seller_home_user_header"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/tv_seller_home_user_sex_tag"
+        android:includeFontPadding="false"
+        android:text="开福区北辰三角洲凤凰店"
+        android:textColor="@color/black_999999"
+        android:textSize="11sp" />
+
+
+
+
+    <com.csxs.viewlib.dynamictext.DynamicTextView
+        android:id="@+id/tv_seller_home_user_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_seller_home_user_header"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:lineSpacingExtra="4dp"
+        android:textSize="14sp"
+        app:ep_max_line="6"
+        app:ep_need_always_showright="false"
+        app:ep_need_animation="true"
+        app:ep_need_contract="true"
+        app:ep_need_expand="true" />
+
+    <com.csxs.letterbook.widgets.imagewatcher.MessagePicturesLayout
+        android:id="@+id/iv_message_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_seller_home_user_content_text"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_seller_home_user_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_message_pictures"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="1分钟 · 发表了动态"
+        android:textColor="@color/black_999999"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_seller_home_user_dynamic_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_seller_home_user_send_time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_zan_dynamic"
+        android:drawablePadding="7dp"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/tv_seller_home_user_dynamic_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_seller_home_user_dynamic_zan"
+        android:layout_marginEnd="30dp"
+        android:layout_toLeftOf="@+id/tv_seller_home_user_dynamic_zan"
+        android:drawableStart="@drawable/ic_dynamic_comment"
+        android:drawablePadding="7dp"
+        android:text="10" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_seller_home_user_dynamic_comment">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/color_f2f2f2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="精彩评论"
+                android:textColor="@color/colorE7A124"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

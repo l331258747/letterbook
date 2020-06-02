@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <ImageView
+      android:id="@+id/iv_store_header"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:src="@drawable/ic_hot_store_header"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      />
+
+    <TextView
+        android:id="@+id/tv_search_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大兵家串串火锅"
+        android:ellipsize="end"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:textColor="@color/black_333333"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/iv_store_header"
+        android:layout_alignTop="@+id/iv_store_header"
+        />
+
+    <TextView
+        android:id="@+id/tv_search_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_999999"
+        android:layout_marginLeft="7dp"
+        android:text="开福区北辰三角洲凤凰店"
+        app:layout_constrainedWidth="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/iv_store_header"
+        android:layout_toRightOf="@+id/iv_store_header"/>
+
+
+
+
+</RelativeLayout>

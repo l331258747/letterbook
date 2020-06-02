@@ -1,0 +1,191 @@
+ext {
+
+    apiUrl = [
+
+            releaseUrl   : "http://www.baidu.com/",
+            preReleaseUrl: "http://www.baidu.com/",
+            debugUrl     : "http://192.168.0.187:1253/",
+    ]
+
+    appKey = [
+            
+            wxAppId    : "wx70505329d90d9107",
+            wxAppSecret: "6c8e6d658c2fc6ccdbf25c50862602db"
+    ]
+
+
+    signing = [
+            storeFile    : file("/keystore/letterbook.jks"),
+            storePassword: "letterbook123",
+            keyAlias     : "letterbook",
+            keyPassword  : "letterbook202047"
+    ]
+
+
+    android = [
+            applicationId    : "com.csxs.letterbook",
+            compileSdkVersion: 29,
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
+            buildToolsVersion: "29.0.3",
+            debugAppName     : "信书开发版本",
+            releaseAppName   : "信书",
+            preReleaseAppName: "预上线版本",
+            debugAppIcon     : "@mipmap/ic_launcher_round",
+            releaseAppIcon   : "@mipmap/ic_launcher",
+            preReleaseAppIcon: "@mipmap/ic_launcher",
+            versionCode      : 1,
+            versionName      : "1.0.0"
+
+    ]
+
+
+    //Libraries
+    designVersion = '1.1.0'
+    appcompat = "1.1.0"
+    cardviewVersion = '1.0.0'
+    supportv4Version = "1.0.0"
+    supportv7Version = "1.0.0"
+    recyclerViewVersion = "1.0.0"
+
+    constraintlayout = "1.1.3"
+    coordinatorlayout = "1.1.0"
+
+
+    rxjavaVersion = "2.2.18"
+    rxandroidVersion = "2.1.1"
+    rxlifecycleVersion = "2.0.1"
+
+    daggerVersion = "2.23.2"
+
+    glideVersion = "4.9.0"
+
+    retrofitVersion = "2.6.1"
+    converterScalars = "2.7.1"
+    okhttpVersion = "4.2.1"
+
+    logInterceptor = '4.2.1'
+
+    constraintVersion = "1.1.3"
+
+    butterKnifeVersion = "10.0.0"
+
+
+    baseRecyclerViewAdapterHelperVersion = "2.9.49-androidx"
+
+    leakcanaryVersion = "2.2"
+
+    xlog = "1.6.1"
+    loggerVersion = "2.2.0"
+
+    autodispose = "1.4.0"
+
+    immersionbar = "3.0.0"
+
+    eventbus = "3.1.1"
+
+    autosize = "1.1.2"
+
+    mmkv = "1.0.23"
+
+    permission = "2.0.3"
+
+    room = "2.2.4"
+
+    material = "1.2.0-alpha05"
+
+    magicIndicator = "1.6.0"
+
+    smartRefreshLayout = "1.1.2"
+
+    banner = "2.0.8"
+
+    badgeview = "1.1.3"
+
+    sdkSourceCompatibility = 1.8
+    sdkTargetCompatibility = 1.8
+    appSourceCompatibility = 1.8
+    appTargetCompatibility = 1.8
+
+    app = [
+            recyclerView                 : "androidx.recyclerview:recyclerview:${recyclerViewVersion}",
+
+            rxjava                       : "io.reactivex.rxjava2:rxjava:${rxjavaVersion}",
+            rxandroid                    : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
+
+            rxlifecycle                  : "com.trello.rxlifecycle2:rxlifecycle-android:${rxlifecycleVersion}",
+            rxlifecycleCompiler          : "com.trello.rxlifecycle2:rxlifecycle-components:${rxlifecycleVersion}",
+
+            dagger                       : "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler               : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            daggerAndroid                : "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerSupport                : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerAndroidProcessor       : "com.google.dagger:dagger-android-processor:${daggerVersion}",
+
+            glide                        : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideCompiler                : "com.github.bumptech.glide:compiler:${glideVersion}",
+            glideintegration             : "com.github.bumptech.glide:okhttp3-integration:${glideVersion}",
+
+
+            okhttp                       : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okhttpCompiler               : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            retrofit                     : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            converterGson                : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            converterScalars             : "com.squareup.retrofit2:converter-scalars:${converterScalars}",
+            adapterRxjava                : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+
+
+            buterKnife                   : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnifeCompiler          : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            logger                       : "com.orhanobut:logger:${loggerVersion}",
+            baseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapterHelperVersion}",
+            leakcanary                   : "com.squareup.leakcanary:leakcanary-android:${leakcanaryVersion}",
+            leakcanaryCompiler           : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanaryVersion}",
+
+            appcompat                    : "androidx.appcompat:appcompat:${appcompat}",
+            appcompatV4                  : "androidx.legacy:legacy-support-v4:${supportv4Version}",
+
+            xlog                         : "com.elvishew:xlog:${xlog}",
+            cardview                     : "androidx.cardview:cardview:${cardviewVersion}",
+
+            autodispose                  : "com.uber.autodispose:autodispose:${autodispose}",
+            autodisposeLifecycle         : "com.uber.autodispose:autodispose-lifecycle:${autodispose}",
+            autodisposeAndroid           : "com.uber.autodispose:autodispose-android:${autodispose}",
+            autodisposeRxlifecycle       : "com.uber.autodispose:autodispose-rxlifecycle3:${autodispose}",
+            autodisposeandroidarch       : "com.uber.autodispose:autodispose-android-archcomponents:${autodispose}",
+
+            immersionbar                 : "com.gyf.immersionbar:immersionbar:${immersionbar}",
+            immersionbarComponents       : "com.gyf.immersionbar:immersionbar-components:${immersionbar}",
+
+            eventbus                     : "org.greenrobot:eventbus:${eventbus}",
+
+            autosize                     : "me.jessyan:autosize:${autosize}",
+
+//            appcompat                    : "androidx.appcompat:appcompat:${appcompat}",
+
+            constraintlayout             : "androidx.constraintlayout:constraintlayout:${constraintlayout}",
+
+            mmkv                         : "com.tencent:mmkv:${mmkv}",
+
+            permission                   : "com.yanzhenjie:permission:${permission}",
+
+            coordinatorlayout            : "androidx.coordinatorlayout:coordinatorlayout:${coordinatorlayout}",
+
+            roomRuntime                  : "androidx.room:room-runtime:${room}",
+            roomCompiler                 : "androidx.room:room-compiler:${room}",
+            roomRxJava                   : "androidx.room:room-rxjava2:${room}",
+            roomTesting                  : "androidx.room:room-testing:${room}",
+
+            material                     : "com.google.android.material:material:${material}",
+
+            magicIndicator               : "com.github.hackware1993:MagicIndicator:${magicIndicator}",
+
+            smartRefreshLayout           : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayout}",
+
+            banner                       : "com.youth.banner:banner:${banner}",
+
+            badgeview                    : "q.rorbin:badgeview:${badgeview}"
+    ]
+
+
+}

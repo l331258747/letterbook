@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/bg_goods_param_top_radius"
+    >
+    
+    <ImageView
+        android:id="@+id/iv_goods_param_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_default_seller_store_goods"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/iv_param_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="冲绳黑糖珍珠乌龙奶茶（热）"
+        android:layout_toRightOf="@+id/iv_goods_param_image"
+        android:layout_alignTop="@+id/iv_goods_param_image"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/color_0D0D0D"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_goods_param_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择规格"
+        android:layout_below="@+id/iv_param_goods_name"
+        android:layout_toRightOf="@+id/iv_goods_param_image"
+        android:layout_marginStart="10dp"
+        android:textSize="10dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/black_666666"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/iv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goods_param_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/iv_goods_param_image"
+        android:text="¥56.8"
+        android:textColor="@color/color_F4210B"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_close_goods_param"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/picture_icon_close"
+        android:tint="@color/black_999999"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"/>
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler_goods_param"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/tv_select_finish"-->
+<!--        android:layout_below="@+id/iv_goods_param_image"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginBottom="10dp" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_goods_param_image"
+        android:layout_above="@+id/tv_select_finish"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <com.csxs.viewlib.LabelsView
+            android:id="@+id/lv_goods_param"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:labelBackground="@drawable/bg_label_goods_param"
+            app:labelTextColor="@drawable/lable_param_text_color"
+            app:labelTextHeight="wrap_content"
+            app:labelTextPaddingBottom="5dp"
+            app:labelTextPaddingLeft="15dp"
+            app:labelTextPaddingRight="15dp"
+            app:labelTextPaddingTop="5dp"
+            app:labelTextSize="12sp"
+            app:labelTextWidth="wrap_content"
+            app:lineMargin="10dp"
+            app:maxSelect="0"
+            app:minSelect="1"
+            app:selectType="SINGLE"
+            app:wordMargin="10dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_select_finish"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_button_radius_black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

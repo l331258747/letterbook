@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/iv_goods_item"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_goods_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_default_seller_store_goods"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/iv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/iv_goods_img"
+        android:layout_toEndOf="@+id/iv_goods_img"
+        tools:text="冲绳黑糖珍珠乌龙奶茶（热）双人份" />
+
+    <TextView
+        android:id="@+id/iv_goods_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好吃的食物，增肥神器，有求必应"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp"
+        android:layout_toEndOf="@+id/iv_goods_img"
+        android:layout_below="@+id/iv_goods_name" />
+
+
+    <TextView
+        android:id="@+id/iv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="¥56.8"
+        android:textColor="@color/color_F4210B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/iv_goods_img"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/iv_goods_detail" />
+
+
+    <com.csxs.letterbook.widgets.numbtn.AddWidget
+        android:id="@+id/iv_goods_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:sub_anim="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/iv_goods_img"/>
+
+
+
+</RelativeLayout>

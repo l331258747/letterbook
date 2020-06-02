@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_comment"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/et_input_message"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toLeftOf="@+id/iv_confirm"
+        android:background="@drawable/bg_comment_bottom_radius"
+        android:gravity="center_vertical"
+        android:hint="留下你的精彩评论吧~~"
+        android:imeActionLabel="发送"
+        android:imeOptions="actionDone"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black_666666"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/iv_confirm"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_button_radius_2"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="发表"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+
+

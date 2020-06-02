@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="right"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_search_seller"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_search_radius">
+
+        <ImageView
+            android:id="@+id/iv_search_msg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_search_msg" />
+
+        <View
+            android:id="@+id/line_msg"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/iv_search_msg"
+            android:background="@color/color_EEEEEE" />
+
+        <TextView
+            android:id="@+id/et_search"
+            android:layout_width="296dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toLeftOf="@+id/line_search_et"
+            android:layout_toRightOf="@+id/line_msg"
+            android:gravity="center_vertical"
+            android:hint="搜索 美食、服装、数码"
+            android:textSize="12sp" />
+        <!--            android:textCursorDrawable="@drawable/bg_cursor_color"-->
+        <View
+            android:id="@+id/line_search_et"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toLeftOf="@+id/iv_search_options"
+            android:background="@color/color_EEEEEE" />
+
+
+        <ImageView
+            android:id="@+id/iv_search_options"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_search_options" />
+    </RelativeLayout>
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ll_search_seller"
+       android:layout_above="@+id/line_sd"
+       android:overScrollMode="never">
+       <LinearLayout
+           android:id="@+id/ll_search_industry"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="12dp"
+               android:includeFontPadding="false"
+               android:text="@string/search_option_industry_str"
+               android:textColor="@color/black_333333"
+               android:textSize="11sp" />
+
+           <com.csxs.viewlib.LabelsView
+               android:id="@+id/lv_search_industry"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="15dp"
+               android:padding="5dp"
+               app:labelBackground="@drawable/bg_select_item_industry_tag"
+               app:labelTextColor="@drawable/bg_select_item_tag_industry_text"
+               app:labelTextHeight="wrap_content"
+               app:labelTextPaddingBottom="7dp"
+               app:labelTextPaddingLeft="24dp"
+               app:labelTextPaddingRight="24dp"
+               app:labelTextPaddingTop="7dp"
+               app:labelTextSize="12sp"
+               app:labelTextWidth="wrap_content"
+               app:lineMargin="10dp"
+               app:selectType="MULTI"
+               app:wordMargin="10dp" />
+
+
+           <TextView
+               android:id="@+id/tv_text_distance_str"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="15dp"
+               android:includeFontPadding="false"
+               android:text="@string/search_option_distance_str"
+               android:textColor="@color/black_333333"
+               android:textSize="11sp"
+               />
+
+
+           <com.csxs.viewlib.seekbar.IndicatorSeekBar
+               android:id="@+id/indicator_seekbar_distance"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:layout_marginTop="10dp"
+               app:isb_thumb_drawable="@drawable/ic_seekbar_distance"
+               app:isb_thumb_color="@color/colorE7A124"
+               app:isb_track_progress_color="@color/colorE7A124"
+               app:isb_track_background_color="@color/color_ececec"
+               app:isb_thumb_size="30dp"
+               app:isb_tick_marks_color="@color/distance_selector_tick_marks_color"
+               app:isb_show_tick_marks_type="oval"
+               app:isb_tick_marks_size="5dp"
+               app:isb_ticks_count="6"
+               app:isb_tick_texts_array="@array/search_option_distance_tick_below_text_length_6"
+               app:isb_show_tick_texts="true"
+               app:isb_tick_texts_color="@color/black_999999"
+               app:isb_seek_smoothly="true"
+               app:isb_thumb_adjust_auto="false"
+               app:isb_show_indicator="circular_bubble"
+               app:isb_indicator_color="@color/colorE7A124"
+               app:isb_progress_value_float="true"
+               app:isb_max="5"
+               app:isb_min="0"
+               />
+
+           <TextView
+               android:id="@+id/tv_text_activites_str"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="15dp"
+               android:includeFontPadding="false"
+               android:text="@string/search_option_activites_str"
+               android:textColor="@color/black_333333"
+               android:textSize="11sp"
+               />
+
+           <com.csxs.viewlib.LabelsView
+               android:id="@+id/lv_search_activites"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="15dp"
+               android:padding="5dp"
+               app:labelBackground="@drawable/bg_select_item_industry_tag"
+               app:labelTextColor="@drawable/bg_select_item_tag_industry_text"
+               app:labelTextHeight="wrap_content"
+               app:labelTextPaddingBottom="7dp"
+               app:labelTextPaddingLeft="24dp"
+               app:labelTextPaddingRight="24dp"
+               app:labelTextPaddingTop="7dp"
+               app:labelTextSize="12sp"
+               app:labelTextWidth="wrap_content"
+               app:lineMargin="10dp"
+               app:selectType="MULTI"
+               app:wordMargin="10dp"/>
+
+           <Space
+               android:layout_width="match_parent"
+               android:layout_height="10dp"/>
+       </LinearLayout>
+   </ScrollView>
+
+    <View
+        android:id="@+id/line_sd"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/color_ececec"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_option_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_ececec"/>
+        <TextView
+            android:id="@+id/tv_options_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="完成"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/colorE7A124"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

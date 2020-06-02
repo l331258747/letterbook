@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6cbdc9</color>
+    <color name="colorPrimaryDark">#6cbdc9</color>
+    <color name="colorAccent">#6cbdc9</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color">#575757</color>
+    <color name="white_tran">#00ffffff</color>
+    <color name="white_ffffff">#ffffff</color>
+    <color name="white_f0f0f0">#f0f0f0</color>
+    <color name="white_f1f1f1">#f1f1f1</color>
+    <color name="white_f4f5f6">#f4f5f6</color>
+    <color name="white_dddddd">#dddddd</color>
+    <color name="white_f2f2f2">#f2f2f2</color>
+    <color name="white_f4f5f7">#f4f5f7</color>
+
+    <color name="color_f5f5f5">#f5f5f5</color>
+
+    <color name="color_F4210B">#F4210B</color>
+
+    <!--  灰色  -->
+    <color name="color_grey_F6F5F5">#F6F5F5</color>
+    <!--  红色  -->
+    <color name="color_red_C41013">#C41013</color>
+    <color name="color_red_EC1919">#EC1919</color>
+
+    <color name="colorGray">#bbbbbb</color>
+    <color name="colorLightGray">#eee</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#6F0AEE</color>
+    <color name="colorDarkBlue">#0091EA</color>
+    <color name="colorLightBlue">#81D4FA</color>
+
+
+    <color name="trans">#00000000</color>
+
+    <color name="colorE7A124">#E7A124</color>
+
+    <color name="color_FF78B8">#FF78B8</color>
+
+    <color name="color_45D06C">#45D06C</color>
+
+
+    <color name="color_63ACFF">#63ACFF</color>
+
+</resources>

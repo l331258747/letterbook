@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cut_margin">51dp</dimen>
+    <dimen name="add_width">75dp</dimen>
+    <dimen name="shopcar_height">65dp</dimen>
+
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="labels_text_size">14sp</dimen>
+
+    <dimen name="fab_size_minis">44dp</dimen>
+</resources>
