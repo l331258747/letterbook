@@ -6,6 +6,7 @@ import com.csxs.letterbook.seller.fragment.SellerStoreInfoFragment;
 import com.csxs.letterbook.seller.fragment.SellerStoreOrderFragment;
 import com.csxs.letterbook.seller.fragment.SellerStorePromotionFragment;
 import com.csxs.letterbook.social.activity.PersonalHomeActivity;
+import com.csxs.letterbook.social.fragment.PersonalDynamicFragment;
 import com.csxs.letterbook.social.fragment.PersonalInfoFragment;
 
 import dagger.Module;
@@ -14,7 +15,7 @@ import dagger.android.ContributesAndroidInjector;
 /**
  * @author: yeliu
  * created on 2020/4/18
- * description: 商家主页 拥有的fragment
+ * description: 个人主页 拥有的fragment
  */
 
 @Module
@@ -35,7 +36,15 @@ public abstract class PsersonalHomeModule {
      */
     @FragmentScope
     @ContributesAndroidInjector
-    abstract SellerStorePromotionFragment provideSellerStorePromotionFragment();
+    abstract PersonalDynamicFragment providePersonalDynamicFragment();
+
+//    /**
+//     * 商家活动fragment
+//     * @return
+//     */
+//    @FragmentScope
+//    @ContributesAndroidInjector
+//    abstract SellerStorePromotionFragment provideSellerStorePromotionFragment();
 
 
 }

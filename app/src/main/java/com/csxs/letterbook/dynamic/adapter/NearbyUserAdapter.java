@@ -230,32 +230,58 @@ public class NearbyUserAdapter extends BaseMultiItemQuickAdapter<NearbyUserDynam
             //性别 年龄
             // sexTag.setText();
 
-            //文本内容动态
-            if (item.getContent() != null && !"".equals(item.getContent())) {
-                textView.setVisibility(View.VISIBLE);
-                textView.bind(item.getDynamicRichText());
-                textView.setContent(item.getDynamicRichText().getContent());
-            } else {
-                textView.setVisibility(View.GONE);
-            }
+//            //文本内容动态
+//            if (item.getContent() != null && !"".equals(item.getContent())) {
+//                textView.setVisibility(View.VISIBLE);
+//                textView.bind(item.getDynamicRichText());
+//                textView.setContent(item.getDynamicRichText().getContent());
+//            } else {
+//                textView.setVisibility(View.GONE);
+//            }
+//
+//            //设置九宫格图片
+//            if (picturesLayout != null) {
+////                if(item.getImageUrl().size()==4){
+////                    picturesLayout.setLayoutParams(new RelativeLayout.LayoutParams());
+////                }
+//                picturesLayout.set(item.getImageUrl(), item.getImageUrl());
+//                picturesLayout.setCallback(mCallback);
+//            }
+//
+//
+//            //时间 距离
+//            dynamicSendTime.setText((mContext.getString(R.string.str_dynamic_time_placeholder, item.getAddTime(), item.getDistanceSpace())));
+//
+//
+//            //回复
+//            dynamicCommentNum.setText(mContext.getString(R.string.int_placeholder, item.getReplyCount()));
+        }
 
-            //设置九宫格图片
-            if (picturesLayout != null) {
+        //文本内容动态
+        if (item.getContent() != null && !"".equals(item.getContent())) {
+            textView.setVisibility(View.VISIBLE);
+            textView.bind(item.getDynamicRichText());
+            textView.setContent(item.getDynamicRichText().getContent());
+        } else {
+            textView.setVisibility(View.GONE);
+        }
+
+        //设置九宫格图片
+        if (picturesLayout != null) {
 //                if(item.getImageUrl().size()==4){
 //                    picturesLayout.setLayoutParams(new RelativeLayout.LayoutParams());
 //                }
-                picturesLayout.set(item.getImageUrl(), item.getImageUrl());
-                picturesLayout.setCallback(mCallback);
-            }
-
-
-            //时间 距离
-            dynamicSendTime.setText((mContext.getString(R.string.str_dynamic_time_placeholder, item.getAddTime(), item.getDistanceSpace())));
-
-
-            //回复
-            dynamicCommentNum.setText(mContext.getString(R.string.int_placeholder, item.getReplyCount()));
+            picturesLayout.set(item.getImageUrl(), item.getImageUrl());
+            picturesLayout.setCallback(mCallback);
         }
+
+
+        //时间 距离
+        dynamicSendTime.setText((mContext.getString(R.string.str_dynamic_time_placeholder, item.getAddTime(), item.getDistanceSpace())));
+
+
+        //回复
+        dynamicCommentNum.setText(mContext.getString(R.string.int_placeholder, item.getReplyCount()));
     }
 
     private void updateThumbs(TextView dynamicZan, NearbyUserDynamicE item) {

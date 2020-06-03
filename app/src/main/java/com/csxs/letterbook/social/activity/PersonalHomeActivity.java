@@ -37,6 +37,7 @@ import com.csxs.letterbook.seller.fragment.SellerStoreDynamicFragment;
 import com.csxs.letterbook.seller.fragment.SellerStoreInfoFragment;
 import com.csxs.letterbook.seller.fragment.SellerStorePromotionFragment;
 import com.csxs.letterbook.social.adapter.PersonalBannerAdapter;
+import com.csxs.letterbook.social.fragment.PersonalDynamicFragment;
 import com.csxs.letterbook.social.fragment.PersonalInfoFragment;
 import com.csxs.letterbook.social.mvp.contract.PersonalHomeContract;
 import com.csxs.letterbook.social.mvp.presenter.PersonalHomePresenter;
@@ -218,11 +219,12 @@ public class PersonalHomeActivity extends BaseDiffActivity<PersonalHomePresenter
         }
 
         personalInfoFragment = (PersonalInfoFragment) PersonalInfoFragment.newInstance(1);
-        SellerStorePromotionFragment sellerStorePromotionFragment = (SellerStorePromotionFragment) SellerStorePromotionFragment.newInstance(GlobalConstants.SELLER_STOREPROMOTION_FRAGMENT);
-
+//        SellerStorePromotionFragment sellerStorePromotionFragment = (SellerStorePromotionFragment) SellerStorePromotionFragment.newInstance(GlobalConstants.SELLER_STOREPROMOTION_FRAGMENT);
+        PersonalDynamicFragment personalDynamicFragment = (PersonalDynamicFragment) PersonalDynamicFragment.newInstance();
         fragments.add(personalInfoFragment);
 
-        fragments.add(sellerStorePromotionFragment);
+//        fragments.add(sellerStorePromotionFragment);
+        fragments.add(personalDynamicFragment);
 
         sellerPagerAdapter = new SellerPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, null, null);
 
